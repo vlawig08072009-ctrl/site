@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Happy Paw – Dog Paradise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50 text-slate-800 antialiased">
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-orange-100">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#home" class="flex items-center gap-2 text-2xl font-extrabold text-orange-500">
+        <span>🐾</span> The Happy Paw
+      </a>
+      <ul class="flex items-center gap-6 sm:gap-8 text-sm sm:text-base font-semibold">
+        <li><a href="#home" class="hover:text-orange-500 transition">Home</a></li>
+        <li><a href="#shop" class="hover:text-orange-500 transition">Shop</a></li>
+        <li><a href="#contact" class="hover:text-orange-500 transition">Contact</a></li>
+        <li>
+          <span class="inline-flex items-center gap-2 bg-orange-500 text-white rounded-full px-4 py-1.5 shadow">
+            🛒 <span id="cart-count">0</span>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCREEN 1: HERO ===================== -->
+  <section id="home" class="min-h-screen flex items-center pt-24 pb-16 bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <span class="inline-block bg-rose-500 text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg mb-6 animate-pulse">
+          🎉 Special Offer: 10% OFF your first order!
+        </span>
+        <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900">
+          Welcome to <span class="text-orange-500">Dog Paradise!</span>
+        </h1>
+        <p class="mt-6 text-lg lg:text-xl text-slate-600 max-w-lg">
+          We sell the best food, toys, and accessories for your best friend.
+        </p>
+        <a href="#shop"
+           class="inline-block mt-10 bg-orange-500 hover:bg-orange-600 text-white text-lg font-bold px-10 py-4 rounded-full shadow-xl shadow-orange-300/50 transition transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-300">
+          Go to Shop
+        </a>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-4 bg-orange-300/40 rounded-[3rem] rotate-3"></div>
+        <img
+          src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=80"
+          alt="A happy dog smiling at the camera"
+          class="relative w-full h-[420px] md:h-[500px] object-cover rounded-[3rem] shadow-2xl border-8 border-white"
+          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=80';">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== SCREEN 2: SHOP ===================== -->
+  <section id="shop" class="min-h-screen py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900">Our Best Sellers</h2>
+        <div class="mt-4 mx-auto w-24 h-1.5 bg-orange-500 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- Product 1 -->
+        <article class="group bg-white border-2 border-orange-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:border-orange-300 hover:-translate-y-2 transition duration-300">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1535930749574-1399327ce78f?auto=format&fit=crop&w=700&q=80"
+              alt="Puppy Chew Toy"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=700&q=80';">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Puppy Chew Toy</h3>
+            <p class="mt-2 text-3xl font-extrabold text-orange-500">$9.99</p>
+            <button class="add-to-cart mt-6 w-full bg-slate-900 hover:bg-orange-500 text-white font-bold py-3 rounded-xl transition">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="group bg-white border-2 border-orange-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:border-orange-300 hover:-translate-y-2 transition duration-300">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=80"
+              alt="Healthy Dog Treats"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=700&q=80';">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Healthy Dog Treats</h3>
+            <p class="mt-2 text-3xl font-extrabold text-orange-500">$12.50</p>
+            <button class="add-to-cart mt-6 w-full bg-slate-900 hover:bg-orange-500 text-white font-bold py-3 rounded-xl transition">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="group bg-white border-2 border-orange-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:border-orange-300 hover:-translate-y-2 transition duration-300">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=700&q=80"
+              alt="Comfortable Dog Collar"
+              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=700&q=80';">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Comfortable Dog Collar</h3>
+            <p class="mt-2 text-3xl font-extrabold text-orange-500">$14.99</p>
+            <button class="add-to-cart mt-6 w-full bg-slate-900 hover:bg-orange-500 text-white font-bold py-3 rounded-xl transition">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="bg-slate-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-2xl font-extrabold text-orange-400">🐾 The Happy Paw</p>
+      <p class="mt-4 text-lg">Free shipping on orders over $30.</p>
+      <a href="#home" class="inline-block mt-6 text-orange-300 hover:text-white underline underline-offset-4 transition">
+        Back to Top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Small inline script: cart counter -->
+  <script>
+    let count = 0;
+    const counter = document.getElementById('cart-count');
+    document.querySelectorAll('.add-to-cart').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        count++;
+        counter.textContent = count;
+        btn.textContent = 'Added ✓';
+        setTimeout(function () { btn.textContent = 'Add to Cart'; }, 1200);
+      });
+    });
+  </script>
+
+</body>
+</html>
